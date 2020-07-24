@@ -1,8 +1,8 @@
-Nature_Pay,Payment_Sum,Payment_Count,Payment_Mean,Year
+Nature,Payment_Sum,Payment_Count,Payment_Mean,Year
 Charitable Contribution,6990377.8,771,9066.64,2013
-"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",206143444.3,122113,1688.14,2013
-Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,9982056.79,4273,2336.08,2013
-Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,3453166.84,907,3807.24,2013
+"Serving as faculty or as a speaker, not continuing education program",206143444.3,122113,1688.14,2013
+"Serving as faculty or as a speaker, non-accredited continuing education program",9982056.79,4273,2336.08,2013
+"Serving as faculty or as a speaker, accredited continuing education program",3453166.84,907,3807.24,2013
 Consulting Fee,156077740.7,64671,2413.41,2013
 Current or prospective ownership or investment interest,16992475.77,2034,8354.22,2013
 Education,28194350.56,181085,155.7,2013
@@ -15,9 +15,9 @@ Royalty or License,330682901.4,5062,65326.53,2013
 Space rental or facility fees (teaching hospital only),5420044.3,3491,1552.58,2013
 Travel and Lodging,76978379.13,224700,342.58,2013
 Charitable Contribution,10326150.17,1504,6865.79,2014
-"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",624105173.6,240413,2595.97,2014
-Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,23534934.05,10206,2305.99,2014
-Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,8233733.49,2050,4016.46,2014
+"Serving as faculty or as a speaker, not continuing education program",624105173.6,240413,2595.97,2014
+"Serving as faculty or as a speaker, non-accredited continuing education program",23534934.05,10206,2305.99,2014
+"Serving as faculty or as a speaker, accredited continuing education program",8233733.49,2050,4016.46,2014
 Consulting Fee,398654753.3,157407,2532.64,2014
 Current or prospective ownership or investment interest,54518766.61,5191,10502.56,2014
 Education,70848357.17,411425,172.2,2014
@@ -30,9 +30,9 @@ Royalty or License,860417130.5,14937,57603.07,2014
 Space rental or facility fees (teaching hospital only),21560428.42,9210,2340.98,2014
 Travel and Lodging,188947338.2,554370,340.83,2014
 Charitable Contribution,24712475.54,1727,14309.48,2015
-"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",537871204.3,276043,1948.51,2015
-Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,29963854.7,15621,1918.18,2015
-Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,6448116.76,1802,3578.31,2015
+"Serving as faculty or as a speaker, not continuing education program",537871204.3,276043,1948.51,2015
+"Serving as faculty or as a speaker, non-accredited continuing education program",29963854.7,15621,1918.18,2015
+"Serving as faculty or as a speaker, accredited continuing education program",6448116.76,1802,3578.31,2015
 Consulting Fee,407932229,145204,2809.37,2015
 Current or prospective ownership or investment interest,52727017.38,4549,11590.9,2015
 Education,56098373.28,294231,190.66,2015
@@ -45,9 +45,9 @@ Royalty or License,987822542.7,15227,64873.09,2015
 Space rental or facility fees (teaching hospital only),22139732.33,9450,2342.83,2015
 Travel and Lodging,200042816.7,586688,340.97,2015
 Charitable Contribution,17317943.05,1635,10592.01,2016
-"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",595487493.3,261860,2274.07,2016
-Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,20652354.55,9794,2108.67,2016
-Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,8690380.65,2580,3368.36,2016
+"Serving as faculty or as a speaker, not continuing education program",595487493.3,261860,2274.07,2016
+"Serving as faculty or as a speaker, non-accredited continuing education program",20652354.55,9794,2108.67,2016
+"Serving as faculty or as a speaker, accredited continuing education program",8690380.65,2580,3368.36,2016
 Consulting Fee,413325420.1,121703,3396.18,2016
 Current or prospective ownership or investment interest,77024411.9,795,96886.05,2016
 Education,56911896.92,273594,208.02,2016
@@ -60,9 +60,9 @@ Royalty or License,1026929244,15157,67752.8,2016
 Space rental or facility fees (teaching hospital only),25209569.04,11220,2246.84,2016
 Travel and Lodging,199873638.8,596146,335.28,2016
 Charitable Contribution,11365286.31,2108,5391.5,2017
-"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",639914127.4,255947,2500.18,2017
-Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,20640057.09,6824,3024.63,2017
-Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,7773840.62,2364,3288.43,2017
+"Serving as faculty or as a speaker, not continuing education program",639914127.4,255947,2500.18,2017
+"Serving as faculty or as a speaker, non-accredited continuing education program",20640057.09,6824,3024.63,2017
+"Serving as faculty or as a speaker, accredited continuing education program",7773840.62,2364,3288.43,2017
 Consulting Fee,446165227.8,138247,3227.3,2017
 Current or prospective ownership or investment interest,23118371.46,940,24594.01,2017
 Education,63818268.4,244961,260.52,2017
@@ -75,9 +75,9 @@ Royalty or License,1070250571,15088,70933.89,2017
 Space rental or facility fees (teaching hospital only),24953270.43,10896,2290.13,2017
 Travel and Lodging,197375492.2,598570,329.75,2017
 Charitable Contribution,9572186.13,1540,6215.71,2018
-"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",618045827.8,248740,2484.71,2018
-Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,24508983.93,7943,3085.61,2018
-Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,10515867.43,2931,3587.81,2018
+"Serving as faculty or as a speaker, not continuing education program",618045827.8,248740,2484.71,2018
+"Serving as faculty or as a speaker, non-accredited continuing education program",24508983.93,7943,3085.61,2018
+"Serving as faculty or as a speaker, accredited continuing education program",10515867.43,2931,3587.81,2018
 Consulting Fee,474947625.6,144119,3295.52,2018
 Current or prospective ownership or investment interest,89183075.55,593,150393.04,2018
 Education,67851738.97,211032,321.52,2018
@@ -90,9 +90,9 @@ Royalty or License,1105719282,15032,73557.7,2018
 Space rental or facility fees (teaching hospital only),24836988.98,10889,2280.92,2018
 Travel and Lodging,198785930.7,596951,333,2018
 Charitable Contribution,10575462.75,1596,6626.23,2019
-"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",669066929.1,243245,2750.59,2019
-Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,21859819.31,7477,2923.61,2019
-Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,9581830.71,2562,3739.98,2019
+"Serving as faculty or as a speaker, not continuing education program",669066929.1,243245,2750.59,2019
+"Serving as faculty or as a speaker, non-accredited continuing education program",21859819.31,7477,2923.61,2019
+"Serving as faculty or as a speaker, accredited continuing education program",9581830.71,2562,3739.98,2019
 Consulting Fee,456697841.2,141341,3231.18,2019
 Current or prospective ownership or investment interest,81461588.21,814,100075.66,2019
 Education,77936486.92,191364,407.27,2019
