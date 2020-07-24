@@ -1,8 +1,8 @@
 Form,Nature,Count,Year
 Cash or cash equivalent,Charitable Contribution,662,2013
-Cash or cash equivalent,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",109124,2013
-Cash or cash equivalent,Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,4263,2013
-Cash or cash equivalent,Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,900,2013
+Cash or cash equivalent,"Serving as faculty or as a speaker, not continuing education program",109124,2013
+Cash or cash equivalent,"Serving as faculty or as a speaker, non-accredited continuing education program",4263,2013
+Cash or cash equivalent,"Serving as faculty or as a speaker, accredited continuing education program",900,2013
 Cash or cash equivalent,Consulting Fee,54710,2013
 Cash or cash equivalent,Current or prospective ownership or investment interest,1874,2013
 Cash or cash equivalent,Education,49860,2013
@@ -14,14 +14,14 @@ Cash or cash equivalent,Honoraria,15852,2013
 Cash or cash equivalent,Royalty or License,5040,2013
 Cash or cash equivalent,Space rental or facility fees (teaching hospital only),3460,2013
 Cash or cash equivalent,Travel and Lodging,73191,2013
-"Dividend, profit or other return on investment","Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",28,2013
+"Dividend, profit or other return on investment","Serving as faculty or as a speaker, not continuing education program",28,2013
 "Dividend, profit or other return on investment",Consulting Fee,2,2013
 "Dividend, profit or other return on investment",Current or prospective ownership or investment interest,104,2013
 "Dividend, profit or other return on investment",Food and Beverage,1,2013
 In-kind items and services,Charitable Contribution,109,2013
-In-kind items and services,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",12894,2013
-In-kind items and services,Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,9,2013
-In-kind items and services,Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,7,2013
+In-kind items and services,"Serving as faculty or as a speaker, not continuing education program",12894,2013
+In-kind items and services,"Serving as faculty or as a speaker, non-accredited continuing education program",9,2013
+In-kind items and services,"Serving as faculty or as a speaker, accredited continuing education program",7,2013
 In-kind items and services,Consulting Fee,9929,2013
 In-kind items and services,Current or prospective ownership or investment interest,22,2013
 In-kind items and services,Education,131225,2013
@@ -33,17 +33,17 @@ In-kind items and services,Honoraria,658,2013
 In-kind items and services,Royalty or License,22,2013
 In-kind items and services,Space rental or facility fees (teaching hospital only),31,2013
 In-kind items and services,Travel and Lodging,151507,2013
-"Stock, stock option, or any other ownership interest","Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",67,2013
-"Stock, stock option, or any other ownership interest",Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,1,2013
+"Stock, stock option, or any other ownership interest","Serving as faculty or as a speaker, not continuing education program",67,2013
+"Stock, stock option, or any other ownership interest","Serving as faculty or as a speaker, non-accredited continuing education program",1,2013
 "Stock, stock option, or any other ownership interest",Consulting Fee,30,2013
 "Stock, stock option, or any other ownership interest",Current or prospective ownership or investment interest,34,2013
 "Stock, stock option, or any other ownership interest",Food and Beverage,9,2013
 "Stock, stock option, or any other ownership interest",Honoraria,3,2013
 "Stock, stock option, or any other ownership interest",Travel and Lodging,2,2013
 Cash or cash equivalent,Charitable Contribution,1247,2014
-Cash or cash equivalent,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",226319,2014
-Cash or cash equivalent,Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,10165,2014
-Cash or cash equivalent,Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,2034,2014
+Cash or cash equivalent,"Serving as faculty or as a speaker, not continuing education program",226319,2014
+Cash or cash equivalent,"Serving as faculty or as a speaker, non-accredited continuing education program",10165,2014
+Cash or cash equivalent,"Serving as faculty or as a speaker, accredited continuing education program",2034,2014
 Cash or cash equivalent,Consulting Fee,152720,2014
 Cash or cash equivalent,Current or prospective ownership or investment interest,4679,2014
 Cash or cash equivalent,Education,85430,2014
@@ -56,14 +56,14 @@ Cash or cash equivalent,Royalty or License,14875,2014
 Cash or cash equivalent,Space rental or facility fees (teaching hospital only),9073,2014
 Cash or cash equivalent,Travel and Lodging,189455,2014
 "Dividend, profit or other return on investment",Charitable Contribution,1,2014
-"Dividend, profit or other return on investment","Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",65,2014
+"Dividend, profit or other return on investment","Serving as faculty or as a speaker, not continuing education program",65,2014
 "Dividend, profit or other return on investment",Consulting Fee,5,2014
 "Dividend, profit or other return on investment",Current or prospective ownership or investment interest,315,2014
 "Dividend, profit or other return on investment",Food and Beverage,1,2014
 In-kind items and services,Charitable Contribution,256,2014
-In-kind items and services,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",13918,2014
-In-kind items and services,Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,40,2014
-In-kind items and services,Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,16,2014
+In-kind items and services,"Serving as faculty or as a speaker, not continuing education program",13918,2014
+In-kind items and services,"Serving as faculty or as a speaker, non-accredited continuing education program",40,2014
+In-kind items and services,"Serving as faculty or as a speaker, accredited continuing education program",16,2014
 In-kind items and services,Consulting Fee,4619,2014
 In-kind items and services,Current or prospective ownership or investment interest,37,2014
 In-kind items and services,Education,325995,2014
@@ -75,8 +75,8 @@ In-kind items and services,Honoraria,922,2014
 In-kind items and services,Royalty or License,48,2014
 In-kind items and services,Space rental or facility fees (teaching hospital only),137,2014
 In-kind items and services,Travel and Lodging,364914,2014
-"Stock, stock option, or any other ownership interest","Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",111,2014
-"Stock, stock option, or any other ownership interest",Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,1,2014
+"Stock, stock option, or any other ownership interest","Serving as faculty or as a speaker, not continuing education program",111,2014
+"Stock, stock option, or any other ownership interest","Serving as faculty or as a speaker, non-accredited continuing education program",1,2014
 "Stock, stock option, or any other ownership interest",Consulting Fee,63,2014
 "Stock, stock option, or any other ownership interest",Current or prospective ownership or investment interest,160,2014
 "Stock, stock option, or any other ownership interest",Food and Beverage,3,2014
@@ -86,9 +86,9 @@ In-kind items and services,Travel and Lodging,364914,2014
 "Stock, stock option, or any other ownership interest",Royalty or License,14,2014
 "Stock, stock option, or any other ownership interest",Travel and Lodging,1,2014
 Cash or cash equivalent,Charitable Contribution,1501,2015
-Cash or cash equivalent,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",264949,2015
-Cash or cash equivalent,Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,15332,2015
-Cash or cash equivalent,Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,1741,2015
+Cash or cash equivalent,"Serving as faculty or as a speaker, not continuing education program",264949,2015
+Cash or cash equivalent,"Serving as faculty or as a speaker, non-accredited continuing education program",15332,2015
+Cash or cash equivalent,"Serving as faculty or as a speaker, accredited continuing education program",1741,2015
 Cash or cash equivalent,Consulting Fee,140135,2015
 Cash or cash equivalent,Current or prospective ownership or investment interest,4091,2015
 Cash or cash equivalent,Education,48314,2015
@@ -100,15 +100,15 @@ Cash or cash equivalent,Honoraria,20242,2015
 Cash or cash equivalent,Royalty or License,15190,2015
 Cash or cash equivalent,Space rental or facility fees (teaching hospital only),9164,2015
 Cash or cash equivalent,Travel and Lodging,199314,2015
-"Dividend, profit or other return on investment","Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",106,2015
+"Dividend, profit or other return on investment","Serving as faculty or as a speaker, not continuing education program",106,2015
 "Dividend, profit or other return on investment",Consulting Fee,13,2015
 "Dividend, profit or other return on investment",Current or prospective ownership or investment interest,282,2015
 "Dividend, profit or other return on investment",Food and Beverage,1,2015
 "Dividend, profit or other return on investment",Royalty or License,4,2015
 In-kind items and services,Charitable Contribution,226,2015
-In-kind items and services,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",10959,2015
-In-kind items and services,Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,288,2015
-In-kind items and services,Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,61,2015
+In-kind items and services,"Serving as faculty or as a speaker, not continuing education program",10959,2015
+In-kind items and services,"Serving as faculty or as a speaker, non-accredited continuing education program",288,2015
+In-kind items and services,"Serving as faculty or as a speaker, accredited continuing education program",61,2015
 In-kind items and services,Consulting Fee,4991,2015
 In-kind items and services,Current or prospective ownership or investment interest,37,2015
 In-kind items and services,Education,245916,2015
@@ -120,8 +120,8 @@ In-kind items and services,Honoraria,928,2015
 In-kind items and services,Royalty or License,33,2015
 In-kind items and services,Space rental or facility fees (teaching hospital only),286,2015
 In-kind items and services,Travel and Lodging,387359,2015
-"Stock, stock option, or any other ownership interest","Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",29,2015
-"Stock, stock option, or any other ownership interest",Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,1,2015
+"Stock, stock option, or any other ownership interest","Serving as faculty or as a speaker, not continuing education program",29,2015
+"Stock, stock option, or any other ownership interest","Serving as faculty or as a speaker, non-accredited continuing education program",1,2015
 "Stock, stock option, or any other ownership interest",Consulting Fee,65,2015
 "Stock, stock option, or any other ownership interest",Current or prospective ownership or investment interest,139,2015
 "Stock, stock option, or any other ownership interest",Education,1,2015
@@ -132,9 +132,9 @@ Any other ownership interest,Consulting Fee,2,2016
 Any other ownership interest,Current or prospective ownership or investment interest,102,2016
 Any other ownership interest,Food and Beverage,3,2016
 Cash or cash equivalent,Charitable Contribution,1141,2016
-Cash or cash equivalent,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",254515,2016
-Cash or cash equivalent,Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,9716,2016
-Cash or cash equivalent,Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,2293,2016
+Cash or cash equivalent,"Serving as faculty or as a speaker, not continuing education program",254515,2016
+Cash or cash equivalent,"Serving as faculty or as a speaker, non-accredited continuing education program",9716,2016
+Cash or cash equivalent,"Serving as faculty or as a speaker, accredited continuing education program",2293,2016
 Cash or cash equivalent,Consulting Fee,117078,2016
 Cash or cash equivalent,Current or prospective ownership or investment interest,330,2016
 Cash or cash equivalent,Education,42952,2016
@@ -146,14 +146,14 @@ Cash or cash equivalent,Honoraria,21324,2016
 Cash or cash equivalent,Royalty or License,15086,2016
 Cash or cash equivalent,Space rental or facility fees (teaching hospital only),11003,2016
 Cash or cash equivalent,Travel and Lodging,200488,2016
-"Dividend, profit or other return on investment","Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",2,2016
+"Dividend, profit or other return on investment","Serving as faculty or as a speaker, not continuing education program",2,2016
 "Dividend, profit or other return on investment",Consulting Fee,4,2016
 "Dividend, profit or other return on investment",Current or prospective ownership or investment interest,266,2016
 "Dividend, profit or other return on investment",Food and Beverage,48,2016
 In-kind items and services,Charitable Contribution,494,2016
-In-kind items and services,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",7304,2016
-In-kind items and services,Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,78,2016
-In-kind items and services,Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,287,2016
+In-kind items and services,"Serving as faculty or as a speaker, not continuing education program",7304,2016
+In-kind items and services,"Serving as faculty or as a speaker, non-accredited continuing education program",78,2016
+In-kind items and services,"Serving as faculty or as a speaker, accredited continuing education program",287,2016
 In-kind items and services,Consulting Fee,4528,2016
 In-kind items and services,Current or prospective ownership or investment interest,34,2016
 In-kind items and services,Education,230642,2016
@@ -165,27 +165,27 @@ In-kind items and services,Honoraria,1133,2016
 In-kind items and services,Royalty or License,58,2016
 In-kind items and services,Space rental or facility fees (teaching hospital only),217,2016
 In-kind items and services,Travel and Lodging,395654,2016
-Stock,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",17,2016
+Stock,"Serving as faculty or as a speaker, not continuing education program",17,2016
 Stock,Consulting Fee,60,2016
 Stock,Current or prospective ownership or investment interest,16,2016
 Stock,Entertainment,2,2016
 Stock,Honoraria,1,2016
 Stock,Royalty or License,11,2016
 Stock,Travel and Lodging,4,2016
-Stock option,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",22,2016
+Stock option,"Serving as faculty or as a speaker, not continuing education program",22,2016
 Stock option,Consulting Fee,31,2016
 Stock option,Current or prospective ownership or investment interest,47,2016
 Stock option,Food and Beverage,2,2016
 Stock option,Honoraria,1,2016
 Stock option,Royalty or License,2,2016
-Any other ownership interest,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",2,2017
+Any other ownership interest,"Serving as faculty or as a speaker, not continuing education program",2,2017
 Any other ownership interest,Consulting Fee,5,2017
 Any other ownership interest,Current or prospective ownership or investment interest,111,2017
 Any other ownership interest,Travel and Lodging,1,2017
 Cash or cash equivalent,Charitable Contribution,1366,2017
-Cash or cash equivalent,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",249577,2017
-Cash or cash equivalent,Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,6812,2017
-Cash or cash equivalent,Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,2357,2017
+Cash or cash equivalent,"Serving as faculty or as a speaker, not continuing education program",249577,2017
+Cash or cash equivalent,"Serving as faculty or as a speaker, non-accredited continuing education program",6812,2017
+Cash or cash equivalent,"Serving as faculty or as a speaker, accredited continuing education program",2357,2017
 Cash or cash equivalent,Consulting Fee,133962,2017
 Cash or cash equivalent,Current or prospective ownership or investment interest,359,2017
 Cash or cash equivalent,Education,25064,2017
@@ -198,14 +198,14 @@ Cash or cash equivalent,Royalty or License,15051,2017
 Cash or cash equivalent,Space rental or facility fees (teaching hospital only),10775,2017
 Cash or cash equivalent,Travel and Lodging,205832,2017
 "Dividend, profit or other return on investment",Charitable Contribution,1,2017
-"Dividend, profit or other return on investment","Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",2,2017
+"Dividend, profit or other return on investment","Serving as faculty or as a speaker, not continuing education program",2,2017
 "Dividend, profit or other return on investment",Current or prospective ownership or investment interest,403,2017
 "Dividend, profit or other return on investment",Education,1,2017
 "Dividend, profit or other return on investment",Food and Beverage,80,2017
 In-kind items and services,Charitable Contribution,741,2017
-In-kind items and services,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",6341,2017
-In-kind items and services,Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,12,2017
-In-kind items and services,Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,7,2017
+In-kind items and services,"Serving as faculty or as a speaker, not continuing education program",6341,2017
+In-kind items and services,"Serving as faculty or as a speaker, non-accredited continuing education program",12,2017
+In-kind items and services,"Serving as faculty or as a speaker, accredited continuing education program",7,2017
 In-kind items and services,Consulting Fee,4123,2017
 In-kind items and services,Current or prospective ownership or investment interest,31,2017
 In-kind items and services,Education,219896,2017
@@ -217,27 +217,27 @@ In-kind items and services,Honoraria,778,2017
 In-kind items and services,Royalty or License,33,2017
 In-kind items and services,Space rental or facility fees (teaching hospital only),121,2017
 In-kind items and services,Travel and Lodging,392737,2017
-Stock,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",20,2017
+Stock,"Serving as faculty or as a speaker, not continuing education program",20,2017
 Stock,Consulting Fee,110,2017
 Stock,Current or prospective ownership or investment interest,16,2017
 Stock,Entertainment,5,2017
 Stock,Food and Beverage,3,2017
 Stock,Grant,1,2017
 Stock,Royalty or License,1,2017
-Stock option,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",5,2017
+Stock option,"Serving as faculty or as a speaker, not continuing education program",5,2017
 Stock option,Consulting Fee,47,2017
 Stock option,Current or prospective ownership or investment interest,20,2017
 Stock option,Food and Beverage,1,2017
 Stock option,Honoraria,2,2017
 Stock option,Royalty or License,3,2017
-Any other ownership interest,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",2,2018
+Any other ownership interest,"Serving as faculty or as a speaker, not continuing education program",2,2018
 Any other ownership interest,Consulting Fee,3,2018
 Any other ownership interest,Current or prospective ownership or investment interest,7,2018
 Any other ownership interest,Food and Beverage,2,2018
 Cash or cash equivalent,Charitable Contribution,810,2018
-Cash or cash equivalent,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",238427,2018
-Cash or cash equivalent,Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,7521,2018
-Cash or cash equivalent,Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,2320,2018
+Cash or cash equivalent,"Serving as faculty or as a speaker, not continuing education program",238427,2018
+Cash or cash equivalent,"Serving as faculty or as a speaker, non-accredited continuing education program",7521,2018
+Cash or cash equivalent,"Serving as faculty or as a speaker, accredited continuing education program",2320,2018
 Cash or cash equivalent,Consulting Fee,139811,2018
 Cash or cash equivalent,Current or prospective ownership or investment interest,223,2018
 Cash or cash equivalent,Education,21672,2018
@@ -249,13 +249,13 @@ Cash or cash equivalent,Honoraria,18857,2018
 Cash or cash equivalent,Royalty or License,14931,2018
 Cash or cash equivalent,Space rental or facility fees (teaching hospital only),10832,2018
 Cash or cash equivalent,Travel and Lodging,198720,2018
-"Dividend, profit or other return on investment","Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",2,2018
+"Dividend, profit or other return on investment","Serving as faculty or as a speaker, not continuing education program",2,2018
 "Dividend, profit or other return on investment",Current or prospective ownership or investment interest,207,2018
 "Dividend, profit or other return on investment",Royalty or License,72,2018
 In-kind items and services,Charitable Contribution,730,2018
-In-kind items and services,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",10274,2018
-In-kind items and services,Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,422,2018
-In-kind items and services,Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,611,2018
+In-kind items and services,"Serving as faculty or as a speaker, not continuing education program",10274,2018
+In-kind items and services,"Serving as faculty or as a speaker, non-accredited continuing education program",422,2018
+In-kind items and services,"Serving as faculty or as a speaker, accredited continuing education program",611,2018
 In-kind items and services,Consulting Fee,4131,2018
 In-kind items and services,Current or prospective ownership or investment interest,121,2018
 In-kind items and services,Education,189360,2018
@@ -267,23 +267,23 @@ In-kind items and services,Honoraria,229,2018
 In-kind items and services,Royalty or License,25,2018
 In-kind items and services,Space rental or facility fees (teaching hospital only),57,2018
 In-kind items and services,Travel and Lodging,398231,2018
-Stock,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",30,2018
+Stock,"Serving as faculty or as a speaker, not continuing education program",30,2018
 Stock,Consulting Fee,92,2018
 Stock,Current or prospective ownership or investment interest,20,2018
 Stock,Grant,1,2018
 Stock,Royalty or License,2,2018
-Stock option,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",5,2018
+Stock option,"Serving as faculty or as a speaker, not continuing education program",5,2018
 Stock option,Consulting Fee,82,2018
 Stock option,Current or prospective ownership or investment interest,15,2018
 Stock option,Food and Beverage,9,2018
 Stock option,Royalty or License,2,2018
-Any other ownership interest,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",4,2019
+Any other ownership interest,"Serving as faculty or as a speaker, not continuing education program",4,2019
 Any other ownership interest,Current or prospective ownership or investment interest,26,2019
 Any other ownership interest,Education,1,2019
 Cash or cash equivalent,Charitable Contribution,824,2019
-Cash or cash equivalent,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",236786,2019
-Cash or cash equivalent,Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,7455,2019
-Cash or cash equivalent,Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,2559,2019
+Cash or cash equivalent,"Serving as faculty or as a speaker, not continuing education program",236786,2019
+Cash or cash equivalent,"Serving as faculty or as a speaker, non-accredited continuing education program",7455,2019
+Cash or cash equivalent,"Serving as faculty or as a speaker, accredited continuing education program",2559,2019
 Cash or cash equivalent,Consulting Fee,137593,2019
 Cash or cash equivalent,Current or prospective ownership or investment interest,266,2019
 Cash or cash equivalent,Education,21871,2019
@@ -295,14 +295,14 @@ Cash or cash equivalent,Honoraria,17615,2019
 Cash or cash equivalent,Royalty or License,15671,2019
 Cash or cash equivalent,Space rental or facility fees (teaching hospital only),11468,2019
 Cash or cash equivalent,Travel and Lodging,198380,2019
-"Dividend, profit or other return on investment","Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",3,2019
+"Dividend, profit or other return on investment","Serving as faculty or as a speaker, not continuing education program",3,2019
 "Dividend, profit or other return on investment",Current or prospective ownership or investment interest,426,2019
 "Dividend, profit or other return on investment",Royalty or License,1,2019
 "Dividend, profit or other return on investment",Travel and Lodging,4,2019
 In-kind items and services,Charitable Contribution,772,2019
-In-kind items and services,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",6402,2019
-In-kind items and services,Compensation for serving as faculty or as a speaker for a non-accredited and noncertified continuing education program,22,2019
-In-kind items and services,Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program,3,2019
+In-kind items and services,"Serving as faculty or as a speaker, not continuing education program",6402,2019
+In-kind items and services,"Serving as faculty or as a speaker, non-accredited continuing education program",22,2019
+In-kind items and services,"Serving as faculty or as a speaker, accredited continuing education program",3,2019
 In-kind items and services,Consulting Fee,3555,2019
 In-kind items and services,Current or prospective ownership or investment interest,60,2019
 In-kind items and services,Education,169492,2019
@@ -314,12 +314,12 @@ In-kind items and services,Honoraria,341,2019
 In-kind items and services,Royalty or License,15,2019
 In-kind items and services,Space rental or facility fees (teaching hospital only),39,2019
 In-kind items and services,Travel and Lodging,417797,2019
-Stock,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",32,2019
+Stock,"Serving as faculty or as a speaker, not continuing education program",32,2019
 Stock,Consulting Fee,155,2019
 Stock,Current or prospective ownership or investment interest,19,2019
 Stock,Grant,1,2019
 Stock,Travel and Lodging,36,2019
-Stock option,"Compensation for services other than consulting, including serving as faculty or as a speaker at a venue other than a continuing education program",18,2019
+Stock option,"Serving as faculty or as a speaker, not continuing education program",18,2019
 Stock option,Consulting Fee,38,2019
 Stock option,Current or prospective ownership or investment interest,17,2019
 Stock option,Food and Beverage,1,2019
