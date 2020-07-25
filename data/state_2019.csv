@@ -1,4 +1,4 @@
-,State,Payment_Sum,Payment_Count,Payment_Mean,Year,Pop,Name,Sum_pc,Count_pc,Mean_pc,state,id
+,State,Payment_Sum,Payment_Count,Payment_Mean,Year,Pop,Name,Sum_per_10000,Count_per_10000,Mean_pc,state,id
 6,AK,1323279.24,10400,127.24,2019,731545,Alaska,18088.83,142.16,1.74,Alaska,2
 13,AL,25084995.63,201833,124.29,2019,4903185,Alabama,51160.61,411.64,0.25,Alabama,1
 20,AR,7901301.36,93323,84.67,2019,3017804,Arkansas,26182.29,309.24,0.28,Arkansas,5
