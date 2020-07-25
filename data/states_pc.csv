@@ -1,4 +1,4 @@
-State,Payment_Sum,Payment_Count,Payment_Mean,Year,Pop,Name,Sum_pc,Count_pc,Mean_pc,state,id
+State,Payment_Sum,Payment_Count,Payment_Mean,Year,Pop,Name,Sum_per_10000,Count_per_10000,Mean_pc,state,id
 AK,267010.65,3750,71.2,2013,737068,Alaska,3622.61,50.88,0.97,Alaska,2
 AK,787942.71,9544,82.56,2014,736283,Alaska,10701.63,129.62,1.12,Alaska,2
 AK,801200.92,10281,77.93,2015,737498,Alaska,10863.77,139.4,1.06,Alaska,2
