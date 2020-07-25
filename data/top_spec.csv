@@ -1,71 +1,71 @@
 ,Physician_Spec,Payment_Sum,Payment_Count,Payment_Mean,Year
-94,Allopathic & Osteopathic Physicians|Orthopaedic Surgery,115455409.28,91666,1259.52,2013
-41,Allopathic & Osteopathic Physicians|Internal Medicine,49374739.74,667596,73.96,2013
-45,Allopathic & Osteopathic Physicians|Internal Medicine|Cardiovascular Disease,38923842.32,248815,156.44,2013
-75,Allopathic & Osteopathic Physicians|Neurological Surgery,30766494.04,41507,741.24,2013
-393,Other Service Providers|Specialist,29453800.58,127753,230.55,2013
-49,"Allopathic & Osteopathic Physicians|Internal Medicine|Endocrinology, Diabetes & Metabolism",28957545.33,106171,272.74,2013
-177,Allopathic & Osteopathic Physicians|Psychiatry & Neurology|Neurology,28028974.57,157608,177.84,2013
-182,Allopathic & Osteopathic Physicians|Psychiatry & Neurology|Psychiatry,25580054.89,169204,151.18,2013
-50,Allopathic & Osteopathic Physicians|Internal Medicine|Gastroenterology,21414591.46,131441,162.92,2013
-29,Allopathic & Osteopathic Physicians|Family Medicine,19509794.11,667207,29.24,2013
-611,Allopathic & Osteopathic Physicians|Orthopaedic Surgery,260449945.85,213226,1221.47,2014
-561,Allopathic & Osteopathic Physicians|Internal Medicine|Cardiovascular Disease,127940226.46,654330,195.53,2014
-544,Allopathic & Osteopathic Physicians|Family Medicine,124871064.64,2231040,55.97,2014
-556,Allopathic & Osteopathic Physicians|Internal Medicine,101341785.79,1817861,55.75,2014
-591,Allopathic & Osteopathic Physicians|Neurological Surgery,93669814.85,96141,974.3,2014
-696,Allopathic & Osteopathic Physicians|Psychiatry & Neurology|Neurology,76472577.75,445468,171.67,2014
-565,"Allopathic & Osteopathic Physicians|Internal Medicine|Endocrinology, Diabetes & Metabolism",76426287.4,293618,260.29,2014
-615,Allopathic & Osteopathic Physicians|Orthopaedic Surgery|Orthopaedic Surgery of the Spine,71568207.23,32415,2207.87,2014
-908,Other Service Providers|Specialist,69440588.49,306223,226.76,2014
-569,Allopathic & Osteopathic Physicians|Internal Medicine|Hematology & Oncology,50643686.97,251558,201.32,2014
-1118,Allopathic & Osteopathic Physicians|Orthopaedic Surgery,251434671.59,207523,1211.6,2015
-1060,Allopathic & Osteopathic Physicians|Internal Medicine,115627011.29,1882905,61.41,2015
-1065,Allopathic & Osteopathic Physicians|Internal Medicine|Cardiovascular Disease,111789606.76,705023,158.56,2015
-1095,Allopathic & Osteopathic Physicians|Neurological Surgery,100183397.08,85910,1166.14,2015
-1122,Allopathic & Osteopathic Physicians|Orthopaedic Surgery|Orthopaedic Surgery of the Spine,86654303.43,32334,2679.97,2015
-1204,Allopathic & Osteopathic Physicians|Psychiatry & Neurology|Neurology,86539575.94,474790,182.27,2015
-1069,"Allopathic & Osteopathic Physicians|Internal Medicine|Endocrinology, Diabetes & Metabolism",82968170.36,336358,246.67,2015
-1400,Other Service Providers|Specialist,67841817.53,276973,244.94,2015
-1112,Allopathic & Osteopathic Physicians|Ophthalmology,63556611.24,150403,422.58,2015
-1048,Allopathic & Osteopathic Physicians|Family Medicine,52353263.46,2016371,25.96,2015
-1594,Allopathic & Osteopathic Physicians|Orthopaedic Surgery,295099831.56,215037,1372.32,2016
-1539,Allopathic & Osteopathic Physicians|Internal Medicine|Cardiovascular Disease,105785710.07,693085,152.63,2016
-1569,Allopathic & Osteopathic Physicians|Neurological Surgery,100878018.32,84729,1190.6,2016
-1534,Allopathic & Osteopathic Physicians|Internal Medicine,99449739.37,1815930,54.77,2016
-1683,Allopathic & Osteopathic Physicians|Psychiatry & Neurology|Neurology,85500932.06,462487,184.87,2016
-1543,"Allopathic & Osteopathic Physicians|Internal Medicine|Endocrinology, Diabetes & Metabolism",79283282.21,338188,234.44,2016
-1522,Allopathic & Osteopathic Physicians|Family Medicine,68301951.35,1987034,34.37,2016
-1586,Allopathic & Osteopathic Physicians|Ophthalmology,67776397.95,160491,422.31,2016
-1598,Allopathic & Osteopathic Physicians|Orthopaedic Surgery|Orthopaedic Surgery of the Spine,61059926.33,31213,1956.23,2016
-1547,Allopathic & Osteopathic Physicians|Internal Medicine|Hematology & Oncology,59690735.69,316801,188.42,2016
-2060,Allopathic & Osteopathic Physicians|Orthopaedic Surgery,294683535.0,212859,1384.41,2017
-2005,Allopathic & Osteopathic Physicians|Internal Medicine|Cardiovascular Disease,104354239.18,651688,160.13,2017
-2150,Allopathic & Osteopathic Physicians|Psychiatry & Neurology|Neurology,99497042.46,481849,206.49,2017
-1999,Allopathic & Osteopathic Physicians|Internal Medicine,93209120.45,1670817,55.79,2017
-2009,"Allopathic & Osteopathic Physicians|Internal Medicine|Endocrinology, Diabetes & Metabolism",88479662.22,330176,267.98,2017
-2035,Allopathic & Osteopathic Physicians|Neurological Surgery,79368890.16,77692,1021.58,2017
-2013,Allopathic & Osteopathic Physicians|Internal Medicine|Hematology & Oncology,62996763.32,336552,187.18,2017
-2064,Allopathic & Osteopathic Physicians|Orthopaedic Surgery|Orthopaedic Surgery of the Spine,59372581.42,30768,1929.69,2017
-2010,Allopathic & Osteopathic Physicians|Internal Medicine|Gastroenterology,57881615.45,384038,150.72,2017
-2052,Allopathic & Osteopathic Physicians|Ophthalmology,54493601.3,149094,365.5,2017
-2495,Allopathic & Osteopathic Physicians|Orthopaedic Surgery,308481967.23,221761,1391.06,2018
-2469,Allopathic & Osteopathic Physicians|Neurological Surgery,105651221.67,79514,1328.71,2018
-2585,Allopathic & Osteopathic Physicians|Psychiatry & Neurology|Neurology,105636149.49,483607,218.43,2018
-2433,Allopathic & Osteopathic Physicians|Internal Medicine,97555368.43,1509722,64.62,2018
-2439,Allopathic & Osteopathic Physicians|Internal Medicine|Cardiovascular Disease,84414989.4,590022,143.07,2018
-2486,Allopathic & Osteopathic Physicians|Ophthalmology,75494709.22,164753,458.23,2018
-2443,"Allopathic & Osteopathic Physicians|Internal Medicine|Endocrinology, Diabetes & Metabolism",70850371.32,303214,233.66,2018
-2447,Allopathic & Osteopathic Physicians|Internal Medicine|Hematology & Oncology,66086285.59,345714,191.16,2018
-2499,Allopathic & Osteopathic Physicians|Orthopaedic Surgery|Orthopaedic Surgery of the Spine,56531673.23,33455,1689.78,2018
-2444,Allopathic & Osteopathic Physicians|Internal Medicine|Gastroenterology,56525096.95,414095,136.5,2018
-2771,Allopathic & Osteopathic Physicians|Orthopaedic Surgery,394133594.07,241919,1629.2,2019
-2862,Allopathic & Osteopathic Physicians|Psychiatry & Neurology|Neurology,113370040.92,505541,224.25,2019
-2745,Allopathic & Osteopathic Physicians|Neurological Surgery,87223181.71,78892,1105.6,2019
-2709,Allopathic & Osteopathic Physicians|Internal Medicine,86374488.55,1305162,66.18,2019
-2715,Allopathic & Osteopathic Physicians|Internal Medicine|Cardiovascular Disease,80739153.19,539284,149.72,2019
-2723,Allopathic & Osteopathic Physicians|Internal Medicine|Hematology & Oncology,71724775.89,344180,208.39,2019
-2892,Allopathic & Osteopathic Physicians|Thoracic Surgery (Cardiothoracic Vascular Surgery),63301050.85,71958,879.69,2019
-2719,"Allopathic & Osteopathic Physicians|Internal Medicine|Endocrinology, Diabetes & Metabolism",62280435.99,289765,214.93,2019
-2883,Allopathic & Osteopathic Physicians|Surgery,62210755.31,183818,338.44,2019
-2683,Allopathic & Osteopathic Physicians|Dermatology,61698550.53,344561,179.06,2019
+94,Orthopaedic Surgery,115455409.3,91666,1259.52,2013
+41,Internal Medicine,49374739.74,667596,73.96,2013
+45,Cardiovascular Disease,38923842.32,248815,156.44,2013
+75,Neurological Surgery,30766494.04,41507,741.24,2013
+393,Specialist,29453800.58,127753,230.55,2013
+49,"Endocrinology, Diabetes & Metabolism",28957545.33,106171,272.74,2013
+177,Nuerology,28028974.57,157608,177.84,2013
+182,Psychiatry,25580054.89,169204,151.18,2013
+50,Gastroenterology,21414591.46,131441,162.92,2013
+29,Family Medicine,19509794.11,667207,29.24,2013
+611,Orthopaedic Surgery,260449945.9,213226,1221.47,2014
+561,Cardiovascular Disease,127940226.5,654330,195.53,2014
+544,Family Medicine,124871064.6,2231040,55.97,2014
+556,Internal Medicine,101341785.8,1817861,55.75,2014
+591,Neurological Surgery,93669814.85,96141,974.3,2014
+696,Nuerology,76472577.75,445468,171.67,2014
+565,"Endocrinology, Diabetes & Metabolism",76426287.4,293618,260.29,2014
+615,Spine Surgeon,71568207.23,32415,2207.87,2014
+908,Specialist,69440588.49,306223,226.76,2014
+569,Hematology & Oncology,50643686.97,251558,201.32,2014
+1118,Orthopaedic Surgery,251434671.6,207523,1211.6,2015
+1060,Internal Medicine,115627011.3,1882905,61.41,2015
+1065,Cardiovascular Disease,111789606.8,705023,158.56,2015
+1095,Neurological Surgery,100183397.1,85910,1166.14,2015
+1122,Spine Surgeon,86654303.43,32334,2679.97,2015
+1204,Nuerology,86539575.94,474790,182.27,2015
+1069,"Endocrinology, Diabetes & Metabolism",82968170.36,336358,246.67,2015
+1400,Specialist,67841817.53,276973,244.94,2015
+1112,Opthalmology,63556611.24,150403,422.58,2015
+1048,Family Medicine,52353263.46,2016371,25.96,2015
+1594,Orthopaedic Surgery,295099831.6,215037,1372.32,2016
+1539,Cardiovascular Disease,105785710.1,693085,152.63,2016
+1569,Neurological Surgery,100878018.3,84729,1190.6,2016
+1534,Internal Medicine,99449739.37,1815930,54.77,2016
+1683,Nuerology,85500932.06,462487,184.87,2016
+1543,"Endocrinology, Diabetes & Metabolism",79283282.21,338188,234.44,2016
+1522,Family Medicine,68301951.35,1987034,34.37,2016
+1586,Opthalmology,67776397.95,160491,422.31,2016
+1598,Spine Surgeon,61059926.33,31213,1956.23,2016
+1547,Hematology & Oncology,59690735.69,316801,188.42,2016
+2060,Orthopaedic Surgery,294683535,212859,1384.41,2017
+2005,Cardiovascular Disease,104354239.2,651688,160.13,2017
+2150,Nuerology,99497042.46,481849,206.49,2017
+1999,Internal Medicine,93209120.45,1670817,55.79,2017
+2009,"Endocrinology, Diabetes & Metabolism",88479662.22,330176,267.98,2017
+2035,Neurological Surgery,79368890.16,77692,1021.58,2017
+2013,Hematology & Oncology,62996763.32,336552,187.18,2017
+2064,Spine Surgeon,59372581.42,30768,1929.69,2017
+2010,Gastroenterology,57881615.45,384038,150.72,2017
+2052,Opthalmology,54493601.3,149094,365.5,2017
+2495,Orthopaedic Surgery,308481967.2,221761,1391.06,2018
+2469,Neurological Surgery,105651221.7,79514,1328.71,2018
+2585,Nuerology,105636149.5,483607,218.43,2018
+2433,Internal Medicine,97555368.43,1509722,64.62,2018
+2439,Cardiovascular Disease,84414989.4,590022,143.07,2018
+2486,Opthalmology,75494709.22,164753,458.23,2018
+2443,"Endocrinology, Diabetes & Metabolism",70850371.32,303214,233.66,2018
+2447,Hematology & Oncology,66086285.59,345714,191.16,2018
+2499,Spine Surgeon,56531673.23,33455,1689.78,2018
+2444,Gastroenterology,56525096.95,414095,136.5,2018
+2771,Orthopaedic Surgery,394133594.1,241919,1629.2,2019
+2862,Nuerology,113370040.9,505541,224.25,2019
+2745,Neurological Surgery,87223181.71,78892,1105.6,2019
+2709,Internal Medicine,86374488.55,1305162,66.18,2019
+2715,Cardiovascular Disease,80739153.19,539284,149.72,2019
+2723,Hematology & Oncology,71724775.89,344180,208.39,2019
+2892,Thoracic Surgery,63301050.85,71958,879.69,2019
+2719,"Endocrinology, Diabetes & Metabolism",62280435.99,289765,214.93,2019
+2883,Surgery,62210755.31,183818,338.44,2019
+2683,Dermatology,61698550.53,344561,179.06,2019
