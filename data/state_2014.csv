@@ -1,4 +1,4 @@
-,State,Payment_Sum,Payment_Count,Payment_Mean,Year,Pop,Name,Sum_pc,Count_pc,Mean_pc,state,id
+,State,Payment_Sum,Payment_Count,Payment_Mean,Year,Pop,Name,Sum_per_10000,Count_per_10000,Mean_pc,state,id
 1,AK,787942.71,9544,82.56,2014,736283,Alaska,10701.63,129.62,1.12,Alaska,2
 8,AL,20842724.6,212423,98.12,2014,4841799,Alabama,43047.48,438.73,0.2,Alabama,1
 15,AR,8272958.65,106445,77.72,2014,2967392,Arkansas,27879.56,358.72,0.26,Arkansas,5
