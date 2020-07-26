@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.8.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <h1>Exploring Financial Interactions between Health Care Companies and Physicians</h1>
+  <h3>Cody Harris</h3>
+  <h2>Introduction</h2>
+  <p>When someone goes to the doctor, they want the doctors decisions to be driven by science and that ultimately have the patient’s best interest in mind. Patients should not have to worry about confounding factors when it comes to why a doctor chose medication A over medication B, or medical device C over medical device D. The choice should be to choose the objectively best treatment plan. While it is likely that most doctors uphold the highest moral standards; it is interesting to examine whether compensation in, various forms, from medical device and pharmaceutical companies effects a doctor’s actions.</p>
+  <p>With the country going through a terrible opiate epidemic, research went into finding causes. A contributing factor that was found in one study, was the amount of opioid marketing at the county level. When opioid marketing increases, so did overdose mortality 1 year later (Hadland SE, 2019). In the 1990s drug companies would entice doctors “with dinners, golf outings, and spa treatments while sending them to seminars on a medical issue” (Quinones, 2016). These seminars and get togethers would satisfy the CME requirements of doctors, while allowing them to go on extravagant trips. Generally, the CME sessions were used as a marketing tool for pharmaceutical companies. In the early 2000s, the pharmaceutical industry started to self-regulate itself by setting guidelines for compensation to physicians (Howley, 2018). There is no doubt that this form of marketing led doctors to make decisions not based upon sound science but based on who was greasing their pockets, the over prescribing of opioids is just one example of pharmaceutical companies effecting what doctors prescribe or recommend.</p>
+  <p>While there have been transgressions from doctors and medical companies in the past, the vast majority of the people in these roles are good and are trying to help. In the end the medical industry must turn profits and make money in a capitalist society such as the United States. The cost of developing and bringing a new drug to market costs between $314 million and $2.8 billion (Wouters OJ, 2020). This is a large financial undertaking, and no one should blame drug companies for trying to recoup their costs and then some. This requires educating and marketing to doctors, so the practice of pharmaceutical marketing is not inherently bad. Doctors are busy people, so buying them lunch to get a chance to educate them might end up helping their patients. With that said, there is a line where compensation goes from getting their attention, to trying to influence their decisions.</p>
+  <p>Although there was self-regulation, our law makers sought to make this practice of medical companies compensating doctors more transparent. A provision of the Affordable Care Act, known as the Sunshine Act, creates a reporting procedure for any payments health care companies make to physicians. The data held in these reports are part of a national transparency program and have been made publicly available. One objective of this transparency is to act to keep physicians accountable. The main function of the Open Payments Data website, where this data is presented to the public, is to be able to search individual doctors so that people can evaluate their own providers. While this function is extremely important, there is not a great way to easily see less granulated data across these large datasets.</p>
+
+  <h2>Data Overview</h2>
+  <p>Starting with the total number of records per year, we see that 2013 has quite a low amount of records compared to the other years. This led me to investigate why this could be, could it mean that there were just that many less records that year? Nope, it happens that records did not start to be kept until August of 2013. This means we only have four months of records for 2013. If we were to extrapolate this amount, we would get a total record count near the other years. After 2013 the number of records seems to be on a slight downward trend. </p>
+  <p>Moving on to the amount paid chart, we see that although we were trending towards less payments each year, it seems as though the total amount paid to doctors is increasing. This leads to the certainty that each payment is increasing. 
+  <p>There is not anything extremely interesting going on in the number of doctors paid chart. The amount stays rather flat, except for 2013, which we can write off as being due to the way the records were kept. I chose to keep 2013 in the charts, although it is not a perfect comparison it is indicative of the data. One interesting thing to see from this chart is that there were about 953,695 licensed doctors in 2016 (Aaron Young, et al., 2017). We see that in 2016, 637,824 doctors (by looking at our tooltip) received payments. This means that 315,871 or about 33% of doctors did not take a single payment from a pharmaceutical company.</p> 
+  <p>Lastly, when it comes to the number of companies that made payments to doctors, we see that for most years the amount stays the same. We would expect some small variation, due to some companies being created to failing each year. It is expect that most medical companies do some level of reach-out to doctors as marketing, so it seems odd that there is such variation in the number of companies from 2017 to 2019 and it begs the question why there is variation in 2018 most of all, by about 50 companies.This might be hard to answer with this data alone, but would be a great question for an industry insider. </p>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "point": {"size": 80}}, "hconcat": [{"vconcat": [{"mark": {"type": "line", "point": true}, "encoding": {"color": {"value": "#482575"}, "tooltip": [{"type": "ordinal", "field": "Year"}, {"type": "quantitative", "field": "Total", "format": ",.0f", "title": "Total Records"}], "x": {"type": "ordinal", "field": "Year"}, "y": {"type": "quantitative", "field": "Total", "scale": {"domain": [3500000, 12000000]}}}, "height": 200, "title": "Total Number of Records", "width": 324}, {"mark": {"type": "line", "point": true}, "encoding": {"color": {"value": "#21918d"}, "tooltip": [{"type": "ordinal", "field": "Year"}, {"type": "quantitative", "field": "Total_Paid", "format": "$,.2f", "title": "Amount Paid"}], "x": {"type": "ordinal", "field": "Year"}, "y": {"type": "quantitative", "axis": {"format": "$,f"}, "field": "Total_Paid", "scale": {"domain": [500000000, 4000000000]}, "title": "USD"}}, "height": 200, "title": "Total Amount Paid", "width": 324}]}, {"vconcat": [{"mark": {"type": "line", "point": true}, "encoding": {"color": {"value": "#35608d"}, "tooltip": [{"type": "ordinal", "field": "Year"}, {"type": "quantitative", "field": "Doctors", "format": ",.0f", "title": "Number of Doctors"}], "x": {"type": "ordinal", "field": "Year"}, "y": {"type": "quantitative", "field": "Doctors", "scale": {"domain": [400000, 700000]}}}, "height": 200, "title": "Number of Doctors Paid", "width": 324}, {"mark": {"type": "line", "point": true}, "encoding": {"color": {"value": "#43bf71"}, "tooltip": [{"type": "ordinal", "field": "Year"}, {"type": "quantitative", "field": "Company_Count", "format": ",.0f", "title": "Number of Companies"}], "x": {"type": "ordinal", "field": "Year"}, "y": {"type": "quantitative", "field": "Company_Count", "scale": {"domain": [1300, 1700]}, "title": "Number of Companies"}}, "height": 200, "title": "Companies that Made Payments to Doctors", "width": 324}]}], "data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/counts.csv"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+  <br></br>
+  <svg height="20" width="1890">
+  <line x1="0" y1="10" x2="1890" y2="10" style="stroke:rgb(0,0,0);stroke-width:1" />
+  </svg>
+  <h2>Exploring Date Data</h2>
+  <p>Upon looking at the charts with all years highlighted, there definitely seems to be a pattern in both the total payment amounts, and the number of payments per month. The relationship of month seems more closely tied to the amount paid per month, than the payments per month. One reason that this could be, is that medical companies stay close to the same budget year after year, and maybe just make slight adjustments. With that said, it seems unlikely that all ~1500 companies vary their budgets similarly. For example, look at how similar the values are from July to September, they are extremely close.</p> 
+  <p>For almost all years, we see a peak in amount paid in a month in February, May, Aug, and November. As mentioned before in one of the failed methods we saw that there were about four peaks each year, but these do not directly relate to normal fiscal quarter ends. It is hard to determine the reason for the peaks, but they are unmistakably present.</p>
+  <p>What is also very interesting when looking at the relationship on count of payments and total amount. The fact that both these charts have a pattern year over year, but the pattern does not match each other, suggests that the mean amount of each payment changes from month to month. With that said, the mean payments seem to follow the same pattern year over year.</p> 
+  <p>This chart shows that we can surmise the relationship between the mean payments without actually encoding that data. For example, for 2019 we know that the mean payment amount drops from October to November because there is a large increase in amount paid, but a drop in count of payments. The mean payment is an interesting topic to continue paying attention to as we can guess that a small payment of $10 for say buying a doctor a drink might not persuade them as much as a $5,000 payment.</p> 
+  <div id="vis2"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec2 = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "point": {"size": 80}}, "vconcat": [{"mark": {"type": "line", "point": true}, "encoding": {"color": {"type": "ordinal", "field": "Year", "scale": {"scheme": "viridis"}}, "opacity": {"condition": {"value": 1, "selection": "selector160"}, "value": 0.1}, "tooltip": [{"type": "ordinal", "field": "Year"}, {"type": "ordinal", "field": "Month_w", "title": "Month"}, {"type": "quantitative", "field": "Payment_Sum", "format": "$,.2f", "title": "Payment Total"}], "x": {"type": "ordinal", "axis": {"title": "Month"}, "field": "Month_w", "sort": ["Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.", "Jul.", "Aug.", "Sep.", "Oct.", "Nov."]}, "y": {"type": "quantitative", "axis": {"format": "$,f", "title": "USD"}, "field": "Payment_Sum", "scale": {"domain": [150000000, 650000000]}}}, "height": 300, "selection": {"selector160": {"type": "multi", "fields": ["Year"], "bind": "legend"}}, "title": "Total Payment Amounts Per Month", "width": 700}, {"mark": {"type": "line", "point": true}, "encoding": {"color": {"type": "ordinal", "field": "Year", "scale": {"scheme": "viridis"}}, "opacity": {"condition": {"value": 1, "selection": "selector161"}, "value": 0.1}, "tooltip": [{"type": "ordinal", "field": "Year"}, {"type": "quantitative", "field": "Payment_Count", "format": ",", "title": "Count"}], "x": {"type": "ordinal", "axis": {"title": "Month"}, "field": "Month_w", "sort": ["Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.", "Jul.", "Aug.", "Sep.", "Oct.", "Nov."]}, "y": {"type": "quantitative", "axis": {"title": "Payments"}, "field": "Payment_Count", "scale": {"domain": [600000, 1200000]}}}, "height": 300, "selection": {"selector161": {"type": "multi", "fields": ["Year"], "bind": "legend"}}, "title": "Number of Payments Per Month", "width": 700}], "data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/month_agg.csv"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"};
+      var embedOpt2 = {"mode": "vega-lite"};
+
+      function showError(el2, error){
+          el2.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el2 = document.getElementById('vis');
+      vegaEmbed("#vis2", spec2, embedOpt2)
+        .catch(error => showError(el2, error));
+    })(vegaEmbed);
+
+  </script>
+  <br></br>
+  <svg height="20" width="1890">
+  <line x1="0" y1="10" x2="1890" y2="10" style="stroke:rgb(0,0,0);stroke-width:1" />
+  </svg>
+  <h2>Nature and Form of Payment</h2>
+  <p>The data being examined for the next visualizations comes from aggregating the amount per payment based on the nature of the payment, and the form of the payment. While these sound like the same thing, they are different and mean different things. The next visualizations will explore these ideas. The form is how the doctors are paid, the nature is why they are paid, or what they are paid to do. </p>
+  <h3>Heatmap of Nature and Form of Payment</h3>
+  <p>Right from the beginning, the most used combination is: Food and Beverage as an In-kind items and services. This makes quite a bit of sense that the majority of payments made are in the form of buying a doctor a meal, or maybe drinks after a shift. Food and Beverage seems to be very popular, and also when the nature of the payment is cash or cash equivalent. I am guessing the difference between cash and in-kind items comes from how the medical company pays. If they pay the bill, then it is in-kind items, if they give the doctors a voucher or reimburse them, that would be cash or cash equivalent. We also see that dividends and stocks are two forms of payments that have specific natures of payments, and do not cover all natures of payments.</p> 
+  <p>One thing that this visualization really shows is that for the most part the majority of payments are cash or items and services. For the most part the amounts in each of these categories do not shift too greatly year over year. While there are many specific insights that can be gained from this visualization, the main thing this visualization does really well is giving quick insight. For example, it is quite easy to see that more doctors were paid to speak at something that wasn’t a continuing education program, than not and that it is most likely that they were paid in cash.</p>
+  <div id="vis3"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec3 = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "axis": {"labelFontSize": 11, "labelLimit": 0}}, "hconcat": [{"mark": "rect", "encoding": {"color": {"type": "quantitative", "field": "Count", "scale": {"scheme": "viridis", "type": "log"}}, "tooltip": [{"type": "ordinal", "field": "Form"}, {"type": "ordinal", "field": "Nature"}, {"type": "quantitative", "field": "Count", "format": ",", "title": "Count"}], "x": {"type": "ordinal", "axis": {"title": " "}, "field": "Form"}, "y": {"type": "ordinal", "axis": {"title": " "}, "field": "Nature"}}, "height": 400, "title": "2013", "transform": [{"filter": "(datum['Year'] === '2013')"}], "width": 100}, {"mark": "rect", "encoding": {"color": {"type": "quantitative", "field": "Count", "scale": {"scheme": "viridis", "type": "log"}}, "tooltip": [{"type": "ordinal", "field": "Form"}, {"type": "ordinal", "field": "Nature"}, {"type": "quantitative", "field": "Count", "format": ",", "title": "Count"}], "x": {"type": "ordinal", "axis": {"title": " "}, "field": "Form"}, "y": {"type": "ordinal", "axis": {"labels": false, "title": " "}, "field": "Nature"}}, "height": 400, "title": "2014", "transform": [{"filter": "(datum['Year'] === '2014')"}], "width": 100}, {"mark": "rect", "encoding": {"color": {"type": "quantitative", "field": "Count", "scale": {"scheme": "viridis", "type": "log"}}, "tooltip": [{"type": "ordinal", "field": "Form"}, {"type": "ordinal", "field": "Nature"}, {"type": "quantitative", "field": "Count", "format": ",", "title": "Count"}], "x": {"type": "ordinal", "axis": {"title": " "}, "field": "Form"}, "y": {"type": "ordinal", "axis": {"labels": false, "title": " "}, "field": "Nature"}}, "height": 400, "title": "2015", "transform": [{"filter": "(datum['Year'] === '2015')"}], "width": 100}, {"mark": "rect", "encoding": {"color": {"type": "quantitative", "field": "Count", "scale": {"scheme": "viridis", "type": "log"}}, "tooltip": [{"type": "ordinal", "field": "Form"}, {"type": "ordinal", "field": "Nature"}, {"type": "quantitative", "field": "Count", "format": ",", "title": "Count"}], "x": {"type": "ordinal", "axis": {"title": " "}, "field": "Form"}, "y": {"type": "ordinal", "axis": {"labels": false, "title": " "}, "field": "Nature"}}, "height": 400, "title": "2016", "transform": [{"filter": "(datum['Year'] === '2016')"}], "width": 150}, {"mark": "rect", "encoding": {"color": {"type": "quantitative", "field": "Count", "scale": {"scheme": "viridis", "type": "log"}}, "tooltip": [{"type": "ordinal", "field": "Form"}, {"type": "ordinal", "field": "Nature"}, {"type": "quantitative", "field": "Count", "format": ",", "title": "Count"}], "x": {"type": "ordinal", "axis": {"title": " "}, "field": "Form"}, "y": {"type": "ordinal", "axis": {"labels": false, "title": " "}, "field": "Nature"}}, "height": 400, "title": "2017", "transform": [{"filter": "(datum['Year'] === '2017')"}], "width": 150}, {"mark": "rect", "encoding": {"color": {"type": "quantitative", "field": "Count", "scale": {"scheme": "viridis", "type": "log"}}, "tooltip": [{"type": "ordinal", "field": "Form"}, {"type": "ordinal", "field": "Nature"}, {"type": "quantitative", "field": "Count", "format": ",", "title": "Count"}], "x": {"type": "ordinal", "axis": {"title": " "}, "field": "Form"}, "y": {"type": "ordinal", "axis": {"labels": false, "title": " "}, "field": "Nature"}}, "height": 400, "title": "2018", "transform": [{"filter": "(datum['Year'] === '2018')"}], "width": 150}, {"mark": "rect", "encoding": {"color": {"type": "quantitative", "field": "Count", "scale": {"scheme": "viridis", "type": "log"}}, "tooltip": [{"type": "ordinal", "field": "Form"}, {"type": "ordinal", "field": "Nature"}, {"type": "quantitative", "field": "Count", "format": ",", "title": "Count"}], "x": {"type": "ordinal", "axis": {"title": " "}, "field": "Form"}, "y": {"type": "ordinal", "axis": {"labels": false, "title": " "}, "field": "Nature"}}, "height": 400, "title": "2019", "transform": [{"filter": "(datum['Year'] === '2019')"}], "width": 150}], "data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/heat_agg.csv"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"};
+      var embedOpt3 = {"mode": "vega-lite"};
+
+      function showError(el3, error){
+          el3.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el3 = document.getElementById('vis3');
+      vegaEmbed("#vis3", spec3, embedOpt3)
+        .catch(error => showError(el3, error));
+    })(vegaEmbed);
+  </script>
+  <h3>Form of Payment</h3>
+  <p>The form of payment charts show the drastic difference in pay between these categories. Cash and in-kind items and services make up a large majority of the sum of total payments for each year, and cash is many multitudes greater than in-kind items and services. While the unfiltered chart barely shows stocks, dividends, and other ownership interest, when we filter on these categories we see the actual proportions well. For most years it seems that payments in stocks were very similar in proportion to the dividends and other profits. The key takeaway from this chart is that although it might not seem like much money is paid in stocks or dividends, each year tens of millions of dollars are paid to doctors using these methods.</p>
+  <div id="vis4"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec4 = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "legend": {"labelLimit": 0}}, "hconcat": [{"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "Form", "scale": {"scheme": "viridis"}}, "x": {"type": "ordinal", "field": "Year"}, "y": {"type": "quantitative", "aggregate": "sum", "axis": {"format": "$,.0f", "title": "Payment Amount"}, "field": "Payment_Sum"}}, "height": 450, "title": "Form of Payments: All Categories", "transform": [{"filter": "(datum['Form'] !== 'NA')"}], "width": 300}, {"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "Form", "scale": {"scheme": "viridis"}}, "tooltip": [{"type": "ordinal", "field": "Form"}, {"type": "quantitative", "aggregate": "sum", "field": "Payment_Sum", "format": "$,.2f", "title": "Payment Amount"}], "x": {"type": "ordinal", "field": "Year"}, "y": {"type": "quantitative", "aggregate": "sum", "axis": {"format": "$,.0f", "title": " "}, "field": "Payment_Sum"}}, "height": 450, "selection": {"selector083": {"type": "multi", "fields": ["Form"], "bind": "legend", "init": [{"Form": "Stock, stock option, or any other ownership interest"}, {"Form": "Dividend, profit or other return on investment"}]}}, "title": "Form of Payments: Filtered", "transform": [{"filter": "(datum['Form'] !== 'NA')"}, {"filter": {"selection": "selector083"}}], "width": 300}], "data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/form_pay.csv"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"};
+      var embedOpt4 = {"mode": "vega-lite"};
+
+      function showError(el4, error){
+          el4.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el4 = document.getElementById('vis4');
+      vegaEmbed("#vis4", spec4, embedOpt4)
+        .catch(error => showError(el4, error));
+    })(vegaEmbed);
+  </script>
+  <p>Moving on to the count data for forms of payments, we see almost a complete reversal in proportions of counts between cash and in-kind items and services. This right away tells us that the mean payment amount when paid in cash is much higher than in-kind services. Likely this comes from the fact that in-kind services seems to be the form of payment most used for food and beverage, where cash is mostly used for consulting fees. It stands to reason that lunch cost less than most doctors consulting fees. Also notice that we cannot even see stocks or dividends on the unfiltered chart. This again shows that the mean payments of these categories must be greater than the other categories. These charts are another example of how we can use just two charts to show three measures of the aggregated data, by showing count and total and using some deductive reasoning.</p>
+  <div id="vis5"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec5 = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "legend": {"labelLimit": 0}}, "hconcat": [{"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "Form", "scale": {"scheme": "viridis"}}, "x": {"type": "ordinal", "field": "Year"}, "y": {"type": "quantitative", "aggregate": "sum", "axis": {"format": ",.0f", "title": "Payment Amount"}, "field": "Payment_Count"}}, "height": 450, "title": "Counts of Form of Payments: All Categories", "transform": [{"filter": "(datum['Form'] !== 'NA')"}], "width": 300}, {"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "Form", "scale": {"scheme": "viridis"}}, "tooltip": [{"type": "ordinal", "field": "Form"}, {"type": "quantitative", "aggregate": "sum", "field": "Payment_Count", "format": ",.0f", "title": "Payment Amount"}], "x": {"type": "ordinal", "field": "Year"}, "y": {"type": "quantitative", "aggregate": "sum", "axis": {"title": " "}, "field": "Payment_Count"}}, "height": 450, "selection": {"selector084": {"type": "multi", "fields": ["Form"], "bind": "legend", "init": [{"Form": "Stock, stock option, or any other ownership interest"}, {"Form": "Dividend, profit or other return on investment"}]}}, "title": "Counts of Form of Payments: Filtered", "transform": [{"filter": "(datum['Form'] !== 'NA')"}, {"filter": {"selection": "selector084"}}], "width": 300}], "data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/form_pay.csv"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"};
+      var embedOpt5 = {"mode": "vega-lite"};
+
+      function showError(el5, error){
+          el5.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el5 = document.getElementById('vis5');
+      vegaEmbed("#vis5", spec5, embedOpt5)
+        .catch(error => showError(el5, error));
+    })(vegaEmbed);
+
+  </script>
+  <h3>Nature of Payment</h3>
+  <p>We will start off by looking at the nature of payment counts first. The counts of nature of payments are again dominated by a couple of categories. In this case the categories are: food and beverage, and travel and lodging. Overwhelmingly the majority of counts are food and beverage. Based on this visualization, it seems that food and beverage are the main monetary ways that medical companies reach doctors. This seems like a not so nefarious way to get some time with someone who could prescribe your product. Even if the dinner is expensive, most doctors’ salaries would allow them to buy that, so it becomes less about the money and more about the gesture of paying for food. </p>
+  <div id="vis6"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec6 = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "legend": {"labelLimit": 0}}, "hconcat": [{"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "Nature", "scale": {"scheme": "viridis"}}, "x": {"type": "ordinal", "field": "Year"}, "y": {"type": "quantitative", "aggregate": "sum", "axis": {"format": ",.0f", "title": "Number of Payments"}, "field": "Payment_Count"}}, "height": 450, "title": "Counts of Nature of Payment: All Categories", "transform": [{"filter": "(datum['Nature'] !== 'NA')"}], "width": 300}, {"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "Nature", "scale": {"scheme": "viridis"}}, "tooltip": [{"type": "ordinal", "field": "Nature", "title": "Nature of Payment"}, {"type": "quantitative", "aggregate": "sum", "field": "Payment_Count", "format": ",.0f", "title": "Payment Count"}], "x": {"type": "ordinal", "field": "Year"}, "y": {"type": "quantitative", "aggregate": "sum", "axis": {"title": " "}, "field": "Payment_Count"}}, "height": 450, "selection": {"selector080": {"type": "multi", "fields": ["Nature"], "bind": "legend", "init": [{"Nature": "Food and Beverage"}, {"Nature": "Travel and Lodging"}]}}, "title": "Counts of Nature of Payments: Filtered", "transform": [{"filter": "(datum['Nature_Pay'] !== 'NA')"}, {"filter": {"selection": "selector080"}}], "width": 300}], "data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/nat_pay.csv"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"};
+      var embedOpt6 = {"mode": "vega-lite"};
+
+      function showError(el6, error){
+          el6.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el6 = document.getElementById('vis6');
+      vegaEmbed("#vis6", spec6, embedOpt6)
+        .catch(error => showError(el6, error));
+    })(vegaEmbed);
+  </script>
+  <p>The visualization below shows us the amounts in USD of the different natures of payments. Unlike the counts chart, we see that when it comes to the nature of payment categories, there is a more equal spread. In fact, we also see that the categories that dominated the count chart, are two of the smaller categories when it comes to cost (travel and food and beverage). After doing some filtering, the nature of payment that seems the most lucrative (and arguably the most nefarious) is Royalties and License. If a doctor were to be paid royalties on certain drugs or devices, it would be a conflict of interest when it comes to prescribing and offering advice. While it seems that the majority of the time medical companies are paying for doctors’ food and beverage, they are really shelling out the largest amount of money to pay royalties and licensing.</p>
+  <div id="vis7"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec7 = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "legend": {"labelLimit": 0}}, "hconcat": [{"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "Nature", "scale": {"scheme": "viridis"}}, "x": {"type": "ordinal", "field": "Year"}, "y": {"type": "quantitative", "aggregate": "sum", "axis": {"format": "$,.0f", "title": "Amount Payments"}, "field": "Payment_Sum"}}, "height": 450, "title": "Nature of Payment Amounts: All Categories", "transform": [{"filter": "(datum['Nature'] !== 'NA')"}], "width": 300}, {"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "Nature", "scale": {"scheme": "viridis"}}, "tooltip": [{"type": "ordinal", "field": "Nature", "title": "Nature of Payment"}, {"type": "quantitative", "aggregate": "sum", "field": "Payment_Count", "format": "$,.2f", "title": "Payment Amount"}], "x": {"type": "ordinal", "field": "Year"}, "y": {"type": "quantitative", "aggregate": "sum", "axis": {"format": "$,.0f", "title": " "}, "field": "Payment_Sum"}}, "height": 450, "selection": {"selector082": {"type": "multi", "fields": ["Nature"], "bind": "legend", "init": [{"Nature": "Food and Beverage"}, {"Nature": "Travel and Lodging"}]}}, "title": "Nature of Payments Amounts: Filtered", "transform": [{"filter": "(datum['Nature_Pay'] !== 'NA')"}, {"filter": {"selection": "selector082"}}], "width": 300}], "data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/nat_pay.csv"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"};
+      var embedOpt7 = {"mode": "vega-lite"};
+
+      function showError(el7, error){
+          el7.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el7 = document.getElementById('vis7');
+      vegaEmbed("#vis7", spec7, embedOpt7)
+        .catch(error => showError(el7, error));
+    })(vegaEmbed);
+
+  </script>
+  <br></br>
+  <svg height="20" width="1890">
+  <line x1="0" y1="10" x2="1890" y2="10" style="stroke:rgb(0,0,0);stroke-width:1" />
+  </svg>
+  <h2>Geographical Interactions</h2>
+  <p>When evaluating count data geographically, we see that a handful of regional patterns seem to emerge year over year. The largest amounts of payments per capita seem to come in Appalachia, which is interesting as it is an epicenter for the opioid epidemic, but not saying that this proves anything. The Pacific Northwest seems to be the region that is consistently low in number of payments per capita. What is most interesting is that it seems as though time after time our visualizations are showing that year over year, there is little change in pattern. </p>
+  <div id="vis8"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec8 = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "title": {"align": "center", "anchor": "middle", "fontSize": 18}}, "vconcat": [{"hconcat": [{"mark": "geoshape", "encoding": {"color": {"type": "quantitative", "field": "Count_per_10000", "scale": {"scheme": "viridis"}}, "tooltip": [{"type": "quantitative", "field": "Count_per_10000", "format": ",.2f", "title": "Count Per 10,000 Residents"}, {"type": "ordinal", "field": "Name"}]}, "height": 220, "projection": {"type": "albersUsa"}, "title": "2014", "transform": [{"lookup": "id", "from": {"data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/state_2014.csv"}, "key": "id", "fields": ["Count_per_10000", "Name"]}}], "width": 300}, {"mark": "geoshape", "encoding": {"color": {"type": "quantitative", "field": "Count_per_10000", "scale": {"scheme": "viridis"}}, "tooltip": [{"type": "quantitative", "field": "Count_per_10000", "format": ",.2f", "title": "Count Per 10,000 Residents"}, {"type": "ordinal", "field": "Name"}]}, "height": 220, "projection": {"type": "albersUsa"}, "title": "2015", "transform": [{"lookup": "id", "from": {"data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/state_2015.csv"}, "key": "id", "fields": ["Count_per_10000", "Name"]}}], "width": 300}, {"mark": "geoshape", "encoding": {"color": {"type": "quantitative", "field": "Count_per_10000", "scale": {"scheme": "viridis"}}, "tooltip": [{"type": "quantitative", "field": "Count_per_10000", "format": ",.2f", "title": "Count Per 10,000 Residents"}, {"type": "ordinal", "field": "Name"}]}, "height": 220, "projection": {"type": "albersUsa"}, "title": "2016", "transform": [{"lookup": "id", "from": {"data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/state_2016.csv"}, "key": "id", "fields": ["Count_per_10000", "Name"]}}], "width": 300}]}, {"hconcat": [{"mark": "geoshape", "encoding": {"color": {"type": "quantitative", "field": "Count_per_10000", "scale": {"scheme": "viridis"}}, "tooltip": [{"type": "quantitative", "field": "Count_per_10000", "format": ",.2f", "title": "Count Per 10,000 Residents"}, {"type": "ordinal", "field": "Name"}]}, "height": 220, "projection": {"type": "albersUsa"}, "title": "2017", "transform": [{"lookup": "id", "from": {"data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/state_2017.csv"}, "key": "id", "fields": ["Count_per_10000", "Name"]}}], "width": 300}, {"mark": "geoshape", "encoding": {"color": {"type": "quantitative", "field": "Count_per_10000", "scale": {"scheme": "viridis"}}, "tooltip": [{"type": "quantitative", "field": "Count_per_10000", "format": ",.2f", "title": "Count Per 10,000 Residents"}, {"type": "ordinal", "field": "Name"}]}, "height": 220, "projection": {"type": "albersUsa"}, "title": "2018", "transform": [{"lookup": "id", "from": {"data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/state_2018.csv"}, "key": "id", "fields": ["Count_per_10000", "Name"]}}], "width": 300}, {"mark": "geoshape", "encoding": {"color": {"type": "quantitative", "field": "Count_per_10000", "scale": {"scheme": "viridis"}}, "tooltip": [{"type": "quantitative", "field": "Count_per_10000", "format": ",.2f", "title": "Count Per 10,000 Residents"}, {"type": "ordinal", "field": "Name"}]}, "height": 220, "projection": {"type": "albersUsa"}, "title": "2019", "transform": [{"lookup": "id", "from": {"data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/state_2019.csv"}, "key": "id", "fields": ["Count_per_10000", "Name"]}}], "width": 300}]}], "data": {"url": "https://vega.github.io/vega-datasets/data/us-10m.json", "format": {"feature": "states", "type": "topojson"}}, "title": "Counts of Payments to Doctors per 10,000 Residents", "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"};
+      var embedOpt8 = {"mode": "vega-lite"};
+
+      function showError(el8, error){
+          el8.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el8 = document.getElementById('vis8');
+      vegaEmbed("#vis8", spec8, embedOpt8)
+        .catch(error => showError(el8, error));
+    })(vegaEmbed);
+
+  </script>
+  <p>More interesting is the total amount of payments to doctors per 10,000 residents (Figure 27). There seems to be certain states where medical companies pay doctors more per capita, by quite a large margin. Also, some states seem to have a large bump one year and had not previously or do not the next year such as: Missouri 2015, New Mexico 2017, North Dakota 2018, and Texas 2019. Then there are a couple states that year after year have a high per capita payment total to doctors: California and Massachusetts. Interestingly, the pattern of count of payments does not apply at all when it comes to total amount in USD of payments. </p>
+  <div id="vis9"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec9 = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "title": {"align": "center", "anchor": "middle", "fontSize": 18}}, "vconcat": [{"hconcat": [{"mark": "geoshape", "encoding": {"color": {"type": "quantitative", "field": "Sum_per_10000", "scale": {"domain": [9000, 250000], "scheme": "viridis"}}, "tooltip": [{"type": "quantitative", "field": "Sum_per_10000"}, {"type": "ordinal", "field": "Name"}]}, "height": 200, "projection": {"type": "albersUsa"}, "title": "2014", "transform": [{"lookup": "id", "from": {"data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/state_2014.csv"}, "key": "id", "fields": ["Sum_per_10000", "Name"]}}], "width": 300}, {"mark": "geoshape", "encoding": {"color": {"type": "quantitative", "field": "Sum_per_10000", "scale": {"domain": [9000, 250000], "scheme": "viridis"}}, "tooltip": [{"type": "quantitative", "field": "Sum_per_10000"}, {"type": "ordinal", "field": "Name"}]}, "height": 200, "projection": {"type": "albersUsa"}, "title": "2015", "transform": [{"lookup": "id", "from": {"data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/state_2015.csv"}, "key": "id", "fields": ["Sum_per_10000", "Name"]}}], "width": 300}, {"mark": "geoshape", "encoding": {"color": {"type": "quantitative", "field": "Sum_per_10000", "scale": {"domain": [9000, 250000], "scheme": "viridis"}}, "tooltip": [{"type": "quantitative", "field": "Sum_per_10000"}, {"type": "ordinal", "field": "Name"}]}, "height": 200, "projection": {"type": "albersUsa"}, "title": "2016", "transform": [{"lookup": "id", "from": {"data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/state_2016.csv"}, "key": "id", "fields": ["Sum_per_10000", "Name"]}}], "width": 300}]}, {"hconcat": [{"mark": "geoshape", "encoding": {"color": {"type": "quantitative", "field": "Sum_per_10000", "scale": {"domain": [9000, 250000], "scheme": "viridis"}}, "tooltip": [{"type": "quantitative", "field": "Sum_per_10000"}, {"type": "ordinal", "field": "Name"}]}, "height": 200, "projection": {"type": "albersUsa"}, "title": "2017", "transform": [{"lookup": "id", "from": {"data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/state_2017.csv"}, "key": "id", "fields": ["Sum_per_10000", "Name"]}}], "width": 300}, {"mark": "geoshape", "encoding": {"color": {"type": "quantitative", "field": "Sum_per_10000", "scale": {"domain": [9000, 250000], "scheme": "viridis"}}, "tooltip": [{"type": "quantitative", "field": "Sum_per_10000"}, {"type": "ordinal", "field": "Name"}]}, "height": 200, "projection": {"type": "albersUsa"}, "title": "2018", "transform": [{"lookup": "id", "from": {"data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/state_2018.csv"}, "key": "id", "fields": ["Sum_per_10000", "Name"]}}], "width": 300}, {"mark": "geoshape", "encoding": {"color": {"type": "quantitative", "field": "Sum_per_10000", "scale": {"domain": [9000, 250000], "scheme": "viridis"}}, "tooltip": [{"type": "quantitative", "field": "Sum_per_10000"}, {"type": "ordinal", "field": "Name"}]}, "height": 200, "projection": {"type": "albersUsa"}, "title": "2019", "transform": [{"lookup": "id", "from": {"data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/state_2019.csv"}, "key": "id", "fields": ["Sum_per_10000", "Name"]}}], "width": 300}]}], "data": {"url": "https://vega.github.io/vega-datasets/data/us-10m.json", "format": {"feature": "states", "type": "topojson"}}, "title": "Amount of Payments to Doctors per 10,000 Residents", "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"};
+      var embedOpt9 = {"mode": "vega-lite"};
+
+      function showError(el9, error){
+          el9.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el9 = document.getElementById('vis9');
+      vegaEmbed("#vis9", spec9, embedOpt9)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+  <br></br>
+  <svg height="20" width="1890">
+  <line x1="0" y1="10" x2="1890" y2="10" style="stroke:rgb(0,0,0);stroke-width:1" />
+  </svg>
+  <h2>Physician Specialty</h2>
+  <p>The first thing you notice when looking at this plot is that one group of doctors hands down gets paid more money by medical companies than any other specialty. In fact, they get paid two to three times more than the second highest paid by medical companies. To take it even further, a sub-specialty of Orthopedic surgeons (spine surgeons) are in the top ten paid specialties by medical companies. One might think that there just might be more Orthopedic Surgeons than other specialties, but when you think about it logically, there is no way that the reason we see the sum paid to Orthopedic Surgeons be so high in comparison. Logically what makes the most sense, is that they have some of the most expensive medical implants, and therefore are some of the biggest money makers for medical device companies so they are willing to spend more money on them than other doctors. </p>
+  <p>As far as the other specialties, there seems to be the same specialties more or less each year at the top. Cardiovascular specialists rank 2nd or 3rd in five of the seven years we have, this could be due to how many patients they have. It is well know that the US has a problem with heart disease, so there is probably a lot of money in marketing to cardiologists. </p>
+  <p>When it comes to the most populous specialty, the 2018 Physician Specialty Data Report found that the most populous specialty was internal medicine, followed by family medicine and pediatrics (KALTER, 2013). Internal medicine makes it on the top 10 all seven years, which makes sense as it is the most populous. On the other hand, family medicine only makes it on the top 10 for four of the seven years, and pediatrics doesn’t make it on the list once. To be fair, thankfully there are not a lot of medical devices or drugs that are marketed to babies and children. </p>
+  <div id="vis10"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec10 = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "title": {"align": "center", "anchor": "middle", "fontSize": 18}}, "vconcat": [{"hconcat": [{"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "Physician_Spec", "legend": null, "scale": {"scheme": "viridis"}}, "tooltip": [{"type": "ordinal", "field": "Physician_Spec", "title": "Specialty"}, {"type": "quantitative", "field": "Payment_Sum", "format": "$,.2f", "title": "Amount Paid"}], "x": {"type": "quantitative", "axis": {"format": "$,.2f", "title": " "}, "field": "Payment_Sum"}, "y": {"type": "ordinal", "axis": {"title": " "}, "field": "Physician_Spec"}}, "title": "2013", "transform": [{"filter": "(datum['Year'] === '2013')"}]}, {"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "Physician_Spec", "legend": null, "scale": {"scheme": "viridis"}}, "tooltip": [{"type": "ordinal", "field": "Physician_Spec", "title": "Specialty"}, {"type": "quantitative", "field": "Payment_Sum", "format": "$,.2f", "title": "Amount Paid"}], "x": {"type": "quantitative", "axis": {"format": "$,.2f", "title": " "}, "field": "Payment_Sum"}, "y": {"type": "ordinal", "axis": {"title": " "}, "field": "Physician_Spec"}}, "title": "2014", "transform": [{"filter": "(datum['Year'] === '2014')"}]}, {"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "Physician_Spec", "legend": null, "scale": {"scheme": "viridis"}}, "tooltip": [{"type": "ordinal", "field": "Physician_Spec", "title": "Specialty"}, {"type": "quantitative", "field": "Payment_Sum", "format": "$,.2f", "title": "Amount Paid"}], "x": {"type": "quantitative", "axis": {"format": "$,.2f", "title": " "}, "field": "Payment_Sum"}, "y": {"type": "ordinal", "axis": {"title": " "}, "field": "Physician_Spec"}}, "title": "2015", "transform": [{"filter": "(datum['Year'] === '2015')"}]}]}, {"hconcat": [{"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "Physician_Spec", "legend": null, "scale": {"scheme": "viridis"}}, "tooltip": [{"type": "ordinal", "field": "Physician_Spec", "title": "Specialty"}, {"type": "quantitative", "field": "Payment_Sum", "format": "$,.2f", "title": "Amount Paid"}], "x": {"type": "quantitative", "axis": {"format": "$,.2f", "title": " "}, "field": "Payment_Sum"}, "y": {"type": "ordinal", "axis": {"title": " "}, "field": "Physician_Spec"}}, "title": "2016", "transform": [{"filter": "(datum['Year'] === '2016')"}]}, {"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "Physician_Spec", "legend": null, "scale": {"scheme": "viridis"}}, "tooltip": [{"type": "ordinal", "field": "Physician_Spec", "title": "Specialty"}, {"type": "quantitative", "field": "Payment_Sum", "format": "$,.2f", "title": "Amount Paid"}], "x": {"type": "quantitative", "axis": {"format": "$,.2f", "title": " "}, "field": "Payment_Sum"}, "y": {"type": "ordinal", "axis": {"title": " "}, "field": "Physician_Spec"}}, "title": "2017", "transform": [{"filter": "(datum['Year'] === '2017')"}]}, {"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "Physician_Spec", "legend": null, "scale": {"scheme": "viridis"}}, "tooltip": [{"type": "ordinal", "field": "Physician_Spec", "title": "Specialty"}, {"type": "quantitative", "field": "Payment_Sum", "format": "$,.2f", "title": "Amount Paid"}], "x": {"type": "quantitative", "axis": {"format": "$,.2f", "title": " "}, "field": "Payment_Sum"}, "y": {"type": "ordinal", "axis": {"title": " "}, "field": "Physician_Spec"}}, "title": "2018", "transform": [{"filter": "(datum['Year'] === '2018')"}]}]}, {"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "Physician_Spec", "legend": null, "scale": {"scheme": "viridis"}}, "tooltip": [{"type": "ordinal", "field": "Physician_Spec", "title": "Specialty"}, {"type": "quantitative", "field": "Payment_Sum", "format": "$,.2f", "title": "Amount Paid"}], "x": {"type": "quantitative", "axis": {"format": "$,.2f", "title": " "}, "field": "Payment_Sum"}, "y": {"type": "ordinal", "axis": {"title": " "}, "field": "Physician_Spec"}}, "title": "2019", "transform": [{"filter": "(datum['Year'] === '2019')"}]}], "data": {"url": "https://raw.githubusercontent.com/codyharris91/Data_Viz/master/data/top_spec.csv"}, "title": "Amount Paid by Doctor Specialty", "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"};
+      var embedOpt10 = {"mode": "vega-lite"};
+
+      function showError(el10, error){
+          el10.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el10 = document.getElementById('vis10');
+      vegaEmbed("#vis10", spec10, embedOpt10)
+        .catch(error => showError(el10, error));
+    })(vegaEmbed);
+
+  </script>
+  <br></br>
+  <svg height="20" width="1890">
+  <line x1="0" y1="10" x2="1890" y2="10" style="stroke:rgb(0,0,0);stroke-width:1" />
+  </svg>
+  <h2>Conclusion</h2>
+  <p>The goal of this project was to show visually what the 70 million+ rows of data in the Open Payments database told us about health care marketing. While there were some revelations, for the most part, the medical industry seems to put the money they pay doctors to use in very similar ways. Some trends do seem like they could sway a doctor’s opinion, which is something that this transparency project is trying to ward against. Overall, these interactive visualizations can serve as a quick and easy way to picture the aggregated data for medical professionals. </p>
+  <h2>References</h2>
+  <ul>
+     <li>Aaron Young, P., Humayun J. Chaudhry, D. M., Xiaomei Pei, P., Katie Arnhart, P., Michael Dugan, M., & Gregory B. Snyder, M. (2017). A Census of Actively Licensed Physicians in the United States, 2016. Journal of Medical Regulation, 7–21.</li>
+     <li>Centers for Medicare & Medicaid Services . (2019, April 25). Medicare Provider Utilization and Payment Data: 2017 Part D Prescriber. Retrieved from Data.CMS.gov: https://data.cms.gov/Medicare-Part-D/Medicare-Provider-Utilization-and-Payment-Data-201/77gb-8z53</li>
+     <li>Centers for Medicare & Medicaid Services. (2019, November 12). Nature of Payments | CMS. Retrieved from CMS.gov: https://www.cms.gov/OpenPayments/About/Natures-of-Payment</li>
+     <li>Centers for Medicare & Medicaid Services. (n.d.). About Open Payments Data. Retrieved from OpenPaymentsData.CMS.gov: https://openpaymentsdata.cms.gov/about</li>
+     <li>firelynx. (2014, December 1). Pandas read_csv low_memory and dtype options. Retrieved from Stack Overflow: https://stackoverflow.com/a/27232309</li>
+     <li>Hadland SE, R.-A. A. (2019). Association of Pharmaceutical Industry Marketing of Opioid Products With Mortality From Opioid-Related Overdoses. JAMA Netw Open.</li>
+     <li>Howley, E. K. (2018, August 31). Do Drug Company Payments to Doctors Influence Which Drugs They Prescribe? Retrieved from U.S. News: https://health.usnews.com/health-care/patient-advice/articles/2018-08-31/do-drug-company-payments-to-doctors-influence-which-drugs-they-prescribe
+     <li>KALTER, L. (2013, November 2). What specialties do doctors choose? Retrieved from AAMC: https://www.aamc.org/news-insights/what-specialties-do-doctors-choose#:~:text=Primary%20care%20remains%20the%20most,total%20population%20of%20practicing%20physicians.
+     <li>Maruf, M. S., Agrawal, S., & Agarwal, P. K. (2018). Financial Relationships between Urologists and Industry: An Analysis of Open Payments Data. Urology Practice, 180-186.</li>
+     <li>Quinones, S. (2016). Dreamland: the true tale of America's opiate epidemic. New York: Bloomsbury Press.</li>
+     <li>United States Census Bureau. (2019, December 30). State Population Totals: 2010-2019. Retrieved from United States Census Bureau: https://www.census.gov/data/tables/time-series/demo/popest/2010s-state-total.html</li>
+     <li>Wouters OJ, M. M. (2020). Estimated Research and Development Investment Needed to Bring a New Medicine to Market, 2009-2018. JAMA, 323(9):844–853.</li>
+     <li>Xu Na, H. G. (2018). Mining Open Payments Data: Analysis of Industry Payments to Thoracic Surgeons From 2014-2016. Journal of medical Internet research.</li>
+  </ul>
+</body>
+</html>
